@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0a0e1a;
+  --surface: #111827;
+  --surface-2: #1c2436;
+  --border: #1f2d45;
+  --accent: #3b82f6;
+  --accent-glow: rgba(59,130,246,0.25);
+  --success: #10b981;
+  --error: #ef4444;
+  --text: #f0f4ff;
+  --text-muted: #6b7fa3;
+}
+
+html, body { height: 100%; background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; }
+
+::selection { background: var(--accent-glow); }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
